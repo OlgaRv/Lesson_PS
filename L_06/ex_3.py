@@ -38,6 +38,6 @@ driver.quit()
 
 
 with open("hh.csv", "w", newline="", encoding="utf-8") as file:
-    writer = csv.writer(file, delimiter=";")
+    writer = csv.writer(file, delimiter=",")
     writer.writerow(['Название вакансии', 'Компания', 'Зарплата', 'Ссылка на вакансию'])
     writer.writerows(parsed_data)
